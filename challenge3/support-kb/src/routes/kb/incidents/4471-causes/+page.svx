@@ -4,14 +4,14 @@ title: '#4471 · two causes, two tickets'
 owner: support desk
 status: living
 reviewed: 2026-10-28
-signature: "v1.eyJzdWIiOiIzODcyIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMyMDIzNzUsImV4cCI6MTc5MzI4ODc3NX0.XBAexgsiltnIWVcFbZrrNrgGUWC7NU8d9CL4JFas8_c"
+signature: "v1.eyJzdWIiOiIzODcyIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMyMDMxNzYsImV4cCI6MTc5MzI4OTU3Nn0.U1tLrrjN5lSEXxTM6qByUPDWizAFtNJFKt4zCW0hYYk"
 ---
 
 <script>
   import CauseTable from '#lib/kb/CauseTable.svelte';
   import Callout from '#lib/kb/Callout.svelte';
   import RenderStamp from '#lib/kb/RenderStamp.svelte';
-  const signature = "v1.eyJzdWIiOiIzODcyIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMyMDIzNzUsImV4cCI6MTc5MzI4ODc3NX0.XBAexgsiltnIWVcFbZrrNrgGUWC7NU8d9CL4JFas8_c";
+  const signature = "v1.eyJzdWIiOiIzODcyIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMyMDMxNzYsImV4cCI6MTc5MzI4OTU3Nn0.U1tLrrjN5lSEXxTM6qByUPDWizAFtNJFKt4zCW0hYYk";
 </script>
 
 Ticket **#4471** merged 412 unique date reports and marked them known as one parser bug.
