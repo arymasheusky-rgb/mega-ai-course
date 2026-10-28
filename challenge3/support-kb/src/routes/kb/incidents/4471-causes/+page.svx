@@ -1,0 +1,41 @@
+---
+layout: runbook
+title: '#4471 · two causes, two tickets'
+owner: support desk
+status: living
+reviewed: 2026-10-28
+signature: Alexander Rymasheusky
+---
+
+<script>
+  import CauseTable from '#lib/kb/CauseTable.svelte';
+  import Callout from '#lib/kb/Callout.svelte';
+  import RenderStamp from '#lib/kb/RenderStamp.svelte';
+</script>
+
+Ticket **#4471** merged 412 unique date reports and marked them known as one parser bug.
+`causes.ts` splits those reports by tenant locale and booking form into **two** causes.
+Each cause needs its own ticket; intake tags alone are not the cause.
+
+<Callout>
+#4471 is not one problem. File one ticket per cause; keep the report count on each ticket.
+</Callout>
+
+## Causes in #4471
+
+<CauseTable ticket={4471} />
+
+## Tickets filed
+
+Report counts stay in `CauseTable` above. One GitHub issue per cause; each body states how many reports that cause covers.
+
+- `parser` — [issue #2](https://github.com/arymasheusky-rgb/mega-ai-course/issues/2): shared parser reads month first; day-first tenants get flipped dates (app, email, and non-hint form paths).
+- `hint` — [issue #3](https://github.com/arymasheusky-rgb/mega-ai-course/issues/3): booking-v3 shows `MM/DD/YYYY`; day-first people type that on the form; the form still reads day-first. Form + booking-v3 only.
+
+## Lessons
+
+- Merge on subject alone packs different causes into one ticket.
+- Cause comes from tenant locale and form (`causes.ts`), not from `meta.intakeTag`.
+- A number the data can compute belongs in a component (`CauseTable`), not typed into prose alone.
+
+<RenderStamp signature="Alexander Rymasheusky" />
