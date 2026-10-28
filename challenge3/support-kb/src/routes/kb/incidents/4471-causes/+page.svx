@@ -4,13 +4,14 @@ title: '#4471 · two causes, two tickets'
 owner: support desk
 status: living
 reviewed: 2026-10-28
-signature: Alexander Rymasheusky
+signature: "v1.eyJzdWIiOiIzODcyIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMyMDIzNzUsImV4cCI6MTc5MzI4ODc3NX0.XBAexgsiltnIWVcFbZrrNrgGUWC7NU8d9CL4JFas8_c"
 ---
 
 <script>
   import CauseTable from '#lib/kb/CauseTable.svelte';
   import Callout from '#lib/kb/Callout.svelte';
   import RenderStamp from '#lib/kb/RenderStamp.svelte';
+  const signature = "v1.eyJzdWIiOiIzODcyIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMyMDIzNzUsImV4cCI6MTc5MzI4ODc3NX0.XBAexgsiltnIWVcFbZrrNrgGUWC7NU8d9CL4JFas8_c";
 </script>
 
 Ticket **#4471** merged 412 unique date reports and marked them known as one parser bug.
@@ -38,4 +39,4 @@ Report counts stay in `CauseTable` above. One GitHub issue per cause; each body 
 - Cause comes from tenant locale and form (`causes.ts`), not from `meta.intakeTag`.
 - A number the data can compute belongs in a component (`CauseTable`), not typed into prose alone.
 
-<RenderStamp signature="Alexander Rymasheusky" />
+<RenderStamp {signature} />
